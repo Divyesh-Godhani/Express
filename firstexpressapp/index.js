@@ -23,6 +23,10 @@ app.get("/about",(req,res) => {
     res.send("About page")
 })
 
+app.get("/contact", (req,res) => {
+    res.status("200").send("contact page");
+})
+
 app.get("*",(req,res) =>{
     res.send("404 page");
 })
